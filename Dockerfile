@@ -11,7 +11,8 @@ echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | su
 apt-get install -y \
 wget \
 oracle-java8-installer \
-oracle-java8-set-default && \
+oracle-java8-set-default \
+wakeonlan && \
 usermod -u 99 nobody && \
 usermod -g 100 nobody && \
 mkdir -p /etc/my_init.d
